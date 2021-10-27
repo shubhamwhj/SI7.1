@@ -1,7 +1,7 @@
 import pygame, sys
 
 pygame.init()
-pygame.mixer.init()
+#Add code to initialize pygame.mixer
 
 clock=pygame.time.Clock()
 screen = pygame.display.set_mode((400,600))
@@ -11,7 +11,7 @@ background_image = pygame.image.load("bg.jpg").convert_alpha()
 enemy_image = pygame.image.load("enemy.png").convert_alpha()
 player_image = pygame.image.load("player.png").convert_alpha()
 
-#Creating sound
+#Add code to Load the sound laser5.wav for bullet firing
 
 
 #creating objects of game
@@ -47,6 +47,7 @@ while True:
                 player.x +=playerSpeed
             if event.key == pygame.K_SPACE and bulletState=="ready":
                 bulletState="fired"
+                #Add code to play the bullet firing sound
                 
     
     if bulletState == "ready":
